@@ -1,0 +1,28 @@
+<script src="/javascripts/index.js"></script>
+<h1>{{title}}</h1>
+<p>Welcome to {{hi}}</p>
+
+<select name="select" id="selectbox">
+    <option value="tags">해시태그</option>
+    <option value="userId">이름,아이디</option>
+</select>
+<input type="text" name="inputValue" id="inputValueId">
+<button id="searchBtn">검색</button>
+<button type="reset">지우기</button>
+
+<div id="main"></div>
+
+<!--<script>-->
+<!--$('#searchBtn').click(function() {-->
+    <!--$.get("/searchInsta", {-->
+        <!--data: {-->
+            <!--"option" : $("#selectbox option:selected").val(),-->
+            <!--"inputValue" : $("#inputValueId").val()-->
+        <!--}-->
+    <!--}).done(function(result) {-->
+        <!--console.log(JSON.parse(result));-->
+        <!--var searchResult = JSON.parse(result)-->
+    <!--console.log(searchResult.data[i].images.standard_resolution.url);-->
+    <!--});-->
+<!--});-->
+<!--</script>-->
